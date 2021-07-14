@@ -13,7 +13,21 @@ sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
 int main() {
-  
+  //variable declaration
+  int num, sum=0;
+
+  //getting inputs
+  printf("enter number :");
+  scanf("%d", &num);
+
+  //calculation
+  for (int i=1;i<=num;i++)
+    {
+      sum=sum+i;
+    }
+    
+  //output
+  printf("Some of first %d natural numbers = %d", num,sum);
   return 0;
 }
 
